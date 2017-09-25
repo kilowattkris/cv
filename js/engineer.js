@@ -227,13 +227,14 @@ var resume_model = function(){
 		for(var i = 0; i<collapsibles.length; i++){
 			$('#'+collapsibles[i].id).children('.condensed-content').hide();
 			$('#'+collapsibles[i].id).children('.condensed-controller').click(function(){
-				if($(this).html() == '+'){
+				console.log($(this).children()[0].innerHTML);
+				if($(this).children()[0].innerHTML == '+'){
 					$(this).siblings().next('div').slideDown(500);
-					$(this).html('-');
+					$(this).children()[0].innerHTML = '-';
 				}
 				else{
 					$(this).siblings().next('div').slideUp(500);
-					$(this).html('+');
+					$(this).children()[0].innerHTML = '+';
 				}
 			});
 		}
