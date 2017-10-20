@@ -595,7 +595,6 @@ textarea {
     padding-right: 5%;
     padding-bottom: 25px;
     /*margin-right: 6%;*/
-    float: left;
     display: inline-block;
     min-height: 640px;
     text-align: center;
@@ -951,7 +950,7 @@ textarea {
 /*For portrait iPhone 5's*/
 
 @media only screen and (max-device-width: 400px) and (orientation: portrait) {
-    body,
+    /* body,
     h1,
     #menuBar {
         font-size: 44px;
@@ -961,7 +960,7 @@ textarea {
     h4,
     p {
         font-size: 28px;
-    }
+    } */
     #menuBar {
         width: 15%;
     }
