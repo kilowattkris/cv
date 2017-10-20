@@ -9,6 +9,10 @@
 
 /*In order of precedence*/
 
+* {
+    box-sizing: border-box;
+}
+
 html {
     display: block;
     width: 100%;
@@ -592,13 +596,13 @@ textarea {
 
 .bodyBlock {
     padding-left: 5%;
-    padding-right: 5%;
+    padding-right: 11%;
     padding-bottom: 25px;
     /*margin-right: 6%;*/
     display: inline-block;
     min-height: 640px;
     text-align: center;
-    width: 84%;
+    width: 100%;
     z-index: 1;
 }
 
@@ -727,7 +731,7 @@ textarea {
     padding-right: 10%;
     padding-top: 4%;
     text-align: center;
-    width: 70%;
+    width: 100%;
 }
 
 .containerText.introText {
@@ -757,7 +761,7 @@ textarea {
 .innerTextContainer {
     display: inline-block;
     padding: 5%;
-    width: 90%;
+    width: 100%;
 }
 
 .left {
@@ -947,87 +951,6 @@ textarea {
 /***********************************/
 
 
-/*For portrait iPhone 5's*/
-
-@media only screen and (max-device-width: 400px) and (orientation: portrait) {
-    /* body,
-    h1,
-    #menuBar {
-        font-size: 44px;
-    }
-    h2,
-    h3,
-    h4,
-    p {
-        font-size: 28px;
-    } */
-    #menuBar {
-        width: 15%;
-    }
-    /*Fall backs in case js doesn't work*/
-    .bodyBlock {
-        width: 75%;
-    }
-    .containerImage {
-        height: 150px;
-        width: 150px;
-    }
-    .icon {
-        margin-top: 10px;
-    }
-    .videoDisplay {
-        width: 480px;
-        height: 320px;
-    }
-    .block {
-        display: none;
-    }
-    .block.interacts {
-        display: flex;
-        height: 16.67%;
-        width: 100%;
-    }
-    .block.interacts .text {
-        display: inline-block;
-    }
-}
-
-
-/*For landscape iPhone 5's*/
-
-@media only screen and (max-device-width: 400px) and (orientation: landscape) {
-    body,
-    h1,
-    #menuBar {
-        font-size: 34px;
-    }
-    h2,
-    h3,
-    h4,
-    p {
-        font-size: 28px;
-    }
-    #menuBar {
-        width: 15%;
-    }
-    .bodyBlock {
-        width: 75%;
-    }
-    /*Fall backs in case js doesn't work*/
-    .containerImage {
-        height: 150px;
-        width: 150px;
-    }
-    .icon {
-        margin-top: 10px;
-    }
-    .videoDisplay {
-        width: 480px;
-        height: 320px;
-    }
-}
-
-
 /*For desktop screens when small*/
 
 @media only screen and (max-width: 640px) {
@@ -1069,8 +992,13 @@ textarea {
     }
     .bodyBlock {
         padding-left: 2%;
-        padding-right: 2%;
-        width: 82%;
+        padding-right: 16%;
+    }
+    .containerText {
+        padding: 4% 0 0;
+    }
+    .awardsText .textLeft {
+        text-align: center !important;
     }
     .containerImage {
         height: 100px;
@@ -1110,8 +1038,7 @@ textarea {
     }
     .bodyBlock {
         padding-left: 4%;
-        padding-right: 4%;
-        width: 84%;
+        padding-right: 12%;
     }
     .containerImage {
         height: 100px;
